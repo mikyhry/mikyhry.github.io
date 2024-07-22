@@ -6,3 +6,29 @@ RewriteRule ^ /%1 [NC,L,R]
 
 RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^ %{REQUEST_URI}.html [NC,L]
+
+
+<Files ~ "\.txt$">
+Order allow,deny
+Deny from all
+</Files>
+
+<Files ~ "\.scss$">
+Order allow,deny
+Deny from all
+</Files>
+
+<Files ~ "\.css$">
+Order allow,deny
+Deny from all
+</Files>
+
+<Files ~ "\.txt$">
+Order allow,deny
+Deny from all
+</Files>
+
+<Files ~ "\.map$">
+Order allow,deny
+Deny from all
+</Files>
